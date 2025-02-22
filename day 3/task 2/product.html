@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background-color: lightgreen;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Product Container */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px;
+            margin-top: 20px;
+        }
+
+        .product-details {
+            max-width: 500px;
+            margin-left: 40px;
+        }
+
+        .product-image {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-title {
+            font-size: 2rem;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: blue;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .add-to-cart {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        .product-review {
+            margin-top: 30px;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .review h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .review p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color:yellowgreen;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .product-image {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .product-details {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cashify</h1>
+    </header>
+
+    <div class="product-container">
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src=iphone.jpg alt="Product Image" />
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h2 class="product-title">15 plus</h2>
+            <p class="product-price">$99999</p>
+            <p class="product-description">
+                his second iteration of the Plus model features a revised design, a brighter display, and a step forward in performance compared with its predecessor, all while keeping the starting price unchanged. It's about the same size as the 15 Pro Max (starting at $1,199), but easier on the wallet.
+            </p>
+
+            <a href="https://www.google.com/search?q=casify+iphone+15&rlz=1C1CHBF_enIN1130IN1130&oq=casify+iphone+15&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgKGIAEMgkIAhAAGAoYgAQyCQgDEAAYChiABDIJCAQQABgKGIAEMgkIBRAAGAoYgAQyCQgGEAAYChiABDIJCAcQABgKGIAEMgkICBAAGAoYgAQyCQgJEAAYChiABNIBCjExMzM3ajBqMTWoAgmwAgHxBeYEjddaplsY&sourceid=chrome&ie=UTF-8"> <button class="add-to-cart">Add to Cart </button></a>
+
+            <!-- Product Reviews -->
+            <div class="product-review">
+                <h3>Customer Reviews</h3>
+
+                <div class="review">
+                    <h4>subash</h4>
+                    <p>Great product! It works exactly as described and is built to last. Highly recommend!</p>
+                </div>
+
+                <div class="review">
+                    <h4>dhrshan</h4>
+                    <p>I bought this product last month, and I'm very happy with it. Worth every penny!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thanks for shopping</p>
+    </footer>
+
+</body>
+</html>

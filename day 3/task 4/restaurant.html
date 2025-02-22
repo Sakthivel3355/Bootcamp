@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image:url("data:image/jpeg;base64,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");
+        }
+
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #2C3E50;
+            border-bottom: 2px solid #BDC3C7;
+            padding-bottom: 10px;
+        }
+
+        /* Menu Items */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .menu-item .item-details {
+            flex-grow: 1;
+        }
+
+        .menu-item .name {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #34495E;
+        }
+
+        .menu-item .description {
+            color: #7F8C8D;
+            font-size: 1em;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #27AE60;
+        }
+
+        /* Responsive styling */
+        @media screen and (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-item img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body style="background-image:img ">
+
+    <header>
+        <h1> Menu Card</h1>
+    </header>
+
+    <div class="container">
+        <!-- Appetizers Section -->
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+
+            <div class="menu-item">
+                <img src= Bruschetta.jpg alt="Bruschetta">
+                <div class="item-details">
+                    <div class="name">Bruschetta</div>
+                    <div class="description">Toasted bread topped with fresh tomatoes, garlic, basil, and balsamic glaze.</div>
+                </div>
+                <div class="price">$500</div>
+            </div>
+
+            <div class="menu-item">
+                <img src=stuffed-mushrooms-sq.jpg alt="Stuffed Mushrooms">
+                <div class="item-details">
+                    <div class="name">Stuffed Mushrooms</div>
+                    <div class="description">Mushrooms stuffed with cheese, garlic, and herbs, baked to perfection.</div>
+                </div>
+                <div class="price">$600</div>
+            </div>
+        </section>
+
+        <!-- Main Courses Section -->
+        <section id="main-courses">
+            <h2>Main Courses</h2>
+
+            <div class="menu-item">
+                <img src=grilled.jpg alt="Grilled Salmon">
+                <div class="item-details">
+                    <div class="name">Grilled Salmon</div>
+                    <div class="description">Freshly grilled salmon fillet with lemon butter sauce, served with vegetables.</div>
+                </div>
+                <div class="price">$199</div>
+            </div>
+
+            <div class="menu-item">
+                <img src=Chicken.jpg alt="Chicken Alfredo">
+                <div class="item-details">
+                    <div class="name">Chicken Alfredo</div>
+                    <div class="description">Creamy Alfredo sauce served with grilled chicken and fettuccine pasta.</div>
+                </div>
+                <div class="price">$1600</div>
+            </div>
+
+            <div class="menu-item">
+                <img src=veg.jpg alt="Vegetable Stir-Fry">
+                <div class="item-details">
+                    <div class="name">Vegetable Stir-Fry</div>
+                    <div class="description">A mix of fresh vegetables stir-fried in soy sauce, served over rice.</div>
+                </div>
+                <div class="price">$1500</div>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section id="desserts">
+            <h2>Desserts</h2>
+
+            <div class="menu-item">
+                <img src=choco.jpg alt="Chocolate Lava Cake">
+                <div class="item-details">
+                    <div class="name">Chocolate Lava Cake</div>
+                    <div class="description">Warm chocolate cake with a molten center, served with vanilla ice cream.</div>
+                </div>
+                <div class="price">$100</div>
+            </div>
+
+            <div class="menu-item">
+                <img src=Tiramisu.jpg alt="Tiramisu">
+                <div class="item-details">
+                    <div class="name">Tiramisu</div>
+                    <div class="description">Layers of coffee-soaked ladyfingers and mascarpone cream, topped with cocoa.</div>
+                </div>
+                <div class="price">$150</div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
+
+
